@@ -267,6 +267,8 @@ function getStepNumber() {
   }
 }
 
+let isPopping = false;
+
 function showScreen(name) {
   state.screen = name;
 
@@ -289,6 +291,10 @@ function showScreen(name) {
   setNarration(name);
   updateProgress();
   saveState();
+
+  if (!isPopping) {
+    history.pushState({ screen: name }, "", "#" + name);
+  }
 
   if (name === "chapter") renderChapter();
   if (name === "test") renderBoard();
@@ -680,12 +686,30 @@ function restoreFlow() {
   showScreen("age");
 }
 
+window.addEventListener("popstate", (e) => {
+  isPopping = true;
+  const target = (e.state && e.state.screen) || "age";
+  showScreen(target);
+  isPopping = false;
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   loadState();
   wireConsentCheckboxes();
   wireButtons();
   restoreFlow();
+  
+document.addEventListener("DOMContentLoaded", () => {
+  loadState();
+  wireConsentCheckboxes();
+  wireButtons();
+  restoreFlow();
+  history.replaceState({ screen: state.screen }, "", "#" + state.screen); // ← nouvelle ligne
 
+  if (state.screen === "test") {
+    renderBoard();
+  }
+  ...
   if (state.screen === "test") {
     renderBoard();
   }
