@@ -640,3 +640,26 @@ function restoreFlow() {
   if (!state.ageApproved) {
     showScreen("age");
     
+document.addEventListener("DOMContentLoaded", () => {
+  const btnAdult = document.getElementById("btnAdult");
+  const btnMinor = document.getElementById("btnMinor");
+  const btnBackFromMinor = document.getElementById("btnBackFromMinor");
+  const btnAcceptConsent = document.getElementById("btnAcceptConsent");
+  const btnContinueFromResult = document.getElementById("btnContinueFromResult");
+  const btnStartChapters = document.getElementById("btnStartChapters");
+  const btnNextChapter = document.getElementById("btnNextChapter");
+  const btnToDiscord = document.getElementById("btnToDiscord");
+  const btnRestart = document.getElementById("btnRestart");
+  const btnBackHome = document.getElementById("btnBackHome");
+
+  btnAdult?.addEventListener("click", () => confirmAge(true));
+  btnMinor?.addEventListener("click", () => confirmAge(false));
+  btnBackFromMinor?.addEventListener("click", () => showScreen("age"));
+  btnAcceptConsent?.addEventListener("click", acceptConsent);
+  btnContinueFromResult?.addEventListener("click", continueFromResult);
+  btnStartChapters?.addEventListener("click", startChapters);
+  btnNextChapter?.addEventListener("click", nextChapter);
+  btnToDiscord?.addEventListener("click", goDiscord);
+  btnRestart?.addEventListener("click", resetExperience);
+  btnBackHome?.addEventListener("click", resetExperience);
+});
