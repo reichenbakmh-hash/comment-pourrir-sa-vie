@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Comment pourrir sa vie - une expérience interactive, satirique et philosophique." />
+  <title>Comment pourrir sa vie</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">✦</div>
+      <div>
+        <h1>Comment pourrir sa vie</h1>
+        <p>Une expérience interactive.</p>
+      </div>
+    </div>
+
+    <div class="topbar-right">
+      <div class="progress-card">
+        <div class="progress-meta">
+          <span id="progressLabel">Étape 1 / 17</span>
+          <span id="stageHint">Bienvenue</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="app">
+    <aside class="narrator" id="narratorBox">
+      <span class="narrator-label">Narrateur</span>
+      <p id="narratorText">Tu es arrivé(e),bravo ton cerveau est encore dans les rayons, mais bientôt en promo
+        si tu ne vas pas jusqu'au bout</p>
+    </aside>
+
+    <!-- AGE GATE -->
+    <section class="screen active" data-screen="age">
+      <div class="screen-card hero-card">
+        <div class="hero-kicker">ACCÈS CONTRÔLÉ</div>
+        <h2>COMMENT POURRIR SA VIE™</h2>
+        <p class="lead">
+          Guide expérimental inutilement sérieux sur les mécanismes qui transforment parfois un individu en son propre obstacle.
+        </p>
+
+        <div class="text-block">
+          <p>Bienvenue.</p>
+          <p>
+            Ce site n'est ni un manuel, ni une thérapie, ni un gourou numérique déguisé en page web.
+            C'est une expérience. Alors pour une fois cette journée installe ton cerveau.
+          </p>
+          <p>
+            Un mélange de satire, de psychologie, de philosophie et d'observation de cette étrange espèce
+            qui invente des problèmes le lundi puis cherche leur solution le mardi. Alors que souvent la seule solution qu'elle puisse trouver c'est une bataille d'oreiller avec des parpaings.
+          </p>
+          <p>
+            Certaines idées risquent de vous faire rire.
+            D'autres risquent de vous mettre légèrement mal à l'aise.
+            C'est généralement bon signe. Si vous n'êtes pas content allez courir dans une forêt les yeux bandés.
+          </p>
+        </div>
+
+        <div class="action-row">
+          <button class="btn primary" id="btnAdult">J'ai 18 ans ou plus </button>
+          <button class="btn ghost" id="btnMinor">Je suis mineur</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINOR PAGE -->
+    <section class="screen" data-screen="minor">
+      <div class="screen-card">
+        <div class="hero-kicker">HALTE DOUCE</div>
+        <h2>Le chaos peut attendre</h2>
+        <p class="lead">
+          Tu n'es pas encore invité à cette petite visite guidée.Ton existence est un logiciel en version bêta et pas encore mis à jou
+        </p>
+
+        <div class="text-block">
+          <p>
+            Et je ne dis pas ça parce que tu n'es pas capable de comprendre.
+            Simplement parce qu'il existe encore des chemins plus lumineux à explorer avant d'apprendre
+            comment les adultes compliquent volontairement leur propre existence.
+          </p>
+          <p>En attendant, quelques recommandations :</p>
+        </div>
+
+        <div class="book-grid">
+          <article class="book-card">
+            <h3>Le Petit Prince</h3>
+            <p>Pour garder une tendresse utile.</p>
+          </article>
+          <article class="book-card">
+            <h3>Poésies douces</h3>
+            <p>Pour calmer le bruit du monde.</p>
+          </article>
+          <article class="book-card">
+            <h3>Contes et récits d'aventure</h3>
+            <p>Pour grandir sans se durcir.</p>
+          </article>
+          <article class="book-card">
+            <h3>Histoires d'amitié</h3>
+            <p>Pour apprendre la beauté des liens.</p>
+          </article>
+        </div>
+
+        <div class="action-row">
+          <button class="btn primary" id="btnBackFromMinor">Retour</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSENT -->
+    <section class="screen" data-screen="consent">
+      <div class="screen-card">
+        <div class="hero-kicker">FORMALITÉ </div>
+        <h2>Contrat de responsabilité</h2>
+        <p class="lead">
+          Avant de poursuivre, nous devons satisfaire une vieille tradition: remplir un formulaire.
+        </p>
+
+        <div class="text-block">
+          <p>
+            Ce site est une œuvre satirique.
+            Toute ressemblance avec votre vie est probablement accidentelle et fortuite.
+            Nous n'incitons personne à agir.
+            Toute utilisation du mot "tu" ou "vous" est fictive. 
+            Ne te sens pas visé, tu n'es pas le personnage principal, 
+            juste une petite feuille qui se pense centrale dans une grande forêt. 
+            Et si tu as compris que le "tu" ne parlait pas de toi, 
+            alors on avance bien.
+          </p>
+        </div>
+
+        <div class="consent-list">
+          <label class="consent-item">
+            <input type="checkbox" class="consent-check" id="consent1">
+            <span class="consent-box"></span>
+            <span>Je suis majeur.</span>
+          </label>
+
+          <label class="consent-item">
+            <input type="checkbox" class="consent-check" id="consent2">
+            <span class="consent-box"></span>
+            <span>Je comprends que ce site utilise l'humour et l'exagération et j'ai vérifié la définition de l'exagération.</span>
+          </label>
+
+          <label class="consent-item">
+            <input type="checkbox" class="consent-check" id="consent3">
+            <span class="consent-box"></span>
+            <span>Je comprends qu'aucun conseil ici ne doit être pris comme une incitation réelle, je suis bête mais pas à ce point.</span>
+          </label>
+
+          <label class="consent-item">
+            <input type="checkbox" class="consent-check" id="consent4">
+            <span class="consent-box"></span>
+            <span>Je suis capable de rire de moi-même sans appeler immédiatement un avocat car je suis moins bête que je puisse le croire.</span>
+          </label>
+
+          <label class="consent-item">
+            <input type="checkbox" class="consent-check" id="consent5">
+            <span class="consent-box"></span>
+            <span>J'assume l'entière responsabilité de ma curiosité et de ma présence dans ce site.</span>
+          </label>
+
+          <label class="consent-item">
+            <input type="checkbox" class="consent-check" id="consent6">
+            <span class="consent-box"></span>
+            <span>Je confirme que ma vie ressemble déjà vaguement à un brouillon.</span>
+          </label>
+        </div>
+
+        <div class="action-row">
+          <button class="btn primary" id="btnAcceptConsent" disabled>J'accepte et j'avance</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEST -->
+    <section class="screen" data-screen="test">
+      <div class="screen-card">
+        <div class="hero-kicker">TEST D'ADMISSION</div>
+        <h2>Test</h2>
+        <p class="lead">
+          Avant d'entrer dans le manuel, vous devez affronter le Gardien.
+        </p>
+
+        <div class="text-block">
+          <p>Il ne garde rien de particulier.</p>
+          <p>Il ne protège aucun secret.</p>
+          <p>Mais il aime profondément gagner au morpion.</p>
+          <p>Et voyons si ta logique est partie en vacances sans prévenir. </p>
+          <p class="small-note">Le Gardien joue parfaitement. Les humains aiment se lancer dans des défis en pensant être les exceptions.</p>
+        </div>
+
+        <div class="game-wrap">
+          <div class="game-board" id="board"></div>
+          <div class="game-panel">
+            <div class="game-status" id="gameStatus">À toi de jouer.</div>
+            <div class="game-explain" id="gameExplain">X commence.</div>
+            <div class="action-row">
+              <button class="btn ghost" id="btnResetGame">Recommencer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULT -->
+    <section class="screen" data-screen="result">
+      <div class="screen-card">
+        <div class="hero-kicker" id="resultKicker">RÉSULTAT</div>
+        <h2 id="resultTitle">Étrange.</h2>
+        <p class="lead" id="resultLead"></p>
+
+        <div class="text-block" id="resultText"></div>
+
+        <div class="action-row">
+          <button class="btn primary" id="btnContinueFromResult">Entrer</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="screen" data-screen="intro">
+      <div class="screen-card">
+        <div class="hero-kicker">PRÉAMBULE</div>
+        <h2>Le Grand Manuel de l'Auto-Sabotage</h2>
+        <p class="lead">
+          Quand on parle de ruiner sa vie, les gens imaginent souvent quelque chose de spectaculaire.
+        </p>
+
+        <div class="text-block">
+          <p>
+            Une chute. Un drame. Une catastrophe.
+          </p>
+          <p>
+            La réalité est beaucoup moins cinématographique.
+            La plupart des existences se déforment lentement.
+            Quelques minutes perdues ici.
+            Une excuse là.
+            Une habitude qui s'installe.
+            Un effort repoussé.
+            Puis répété.
+            Encore.
+            Et encore.
+          </p>
+          <p>
+            On possède parfois un talent remarquable :
+            transformer des petits renoncements quotidiens en grands regrets futurs.
+          </p>
+        </div>
+
+        <div class="action-row">
+          <button class="btn primary" id="btnStartChapters">Commencer</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER -->
+    <section class="screen" data-screen="chapter">
+      <div class="screen-card chapter-card">
+        <div class="chapter-meta">
+          <span id="chapterCounter">Chapitre 1 / 10</span>
+          <span class="chapter-pill">Lecture guidée</span>
+        </div>
+
+        <h2 id="chapterTitle">Titre</h2>
+        <p class="chapter-quote" id="chapterQuote"></p>
+
+        <div class="text-block chapter-body" id="chapterBody"></div>
+
+        <div class="chapter-callout" id="chapterCallout"></div>
+
+        <div class="action-row">
+          <button class="btn primary" id="btnNextChapter">Chapitre suivant</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="screen" data-screen="final">
+      <div class="screen-card">
+        <div class="hero-kicker">CONCLUSION</div>
+        <h2>L'artiste</h2>
+        <p class="lead">
+          La vie n'est pas quelque chose que l'on doit simplement subir.
+        </p>
+
+        <div class="text-block">
+          <p>
+            Un philosophe comme Nietzsche pensait que l'art ne sert pas seulement à décorer le monde.
+            Il sert à le rendre habitable.
+          </p>
+          <p>
+            Imagine qu'on te donne un bloc d'argile.
+            Tu peux le laisser tel quel.
+            Tu peux le détruire.
+            Ou tu peux lui donner une forme.
+          </p>
+          <p>
+            La vie fonctionne un peu de la même manière.
+            Tu ne choisis pas toujours la matière.
+            Mais tu participes à la forme.
+          </p>
+          <p>
+            Les erreurs, les peurs, les maladresses, les échecs :
+            tout cela fait partie du matériau.
+            L'artiste ne supprime pas les imperfections.
+            Il essaie de travailler avec elles.
+          </p>
+          <p>
+            Peut-être que le véritable contraire de "pourrir sa vie" n'est pas "réussir sa vie".
+            Peut-être que c'est simplement : la façonner consciemment. Ne t’inquiète pas, le fil 
+            est cassé depuis longtemps, tu fais semblant de suivre. Mais ce n'est pas grave.
+          </p>
+        </div>
+
+        <div class="quote-box">
+          <p>La vie n'est pas faite pour être seulement vécue.</p>
+          <p>Elle est faite pour être façonnée.</p>
+        </div>
+
+        <div class="action-row">
+          <button class="btn primary" id="btnToDiscord">Aller au Discord</button>
+          <button class="btn ghost" id="btnRestart">Recommencer</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCORD -->
+    <section class="screen" data-screen="discord">
+      <div class="screen-card">
+        <div class="hero-kicker">SORTIE</div>
+        <h2>Bureau des Réclamations Existentielles</h2>
+        <p class="lead">
+          Oh ça va, c'est un site parfait donc si tu souhaites discuter, débattre ou signaler un bug dans la réalité, voici l'accès.
+        </p>
+
+        <div class="discord-card">
+          <p>Besoin de me retrouver ?</p>
+          <a class="btn primary discord-link" id="discordLink" href="#" target="_blank" rel="noopener noreferrer">
+            Rejoindre le Discord
+          </a>
+        </div>
+
+        <div class="text-block">
+          <p class="small-note">
+            Créé avec trop de café et pas assez de sommeil.
+          </p>
+        </div>
+
+        <div class="action-row">
+          <button class="btn ghost" id="btnBackHome">Retour au début</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      « Nous voulons être les poètes de notre vie, et tout d’abord dans les choses les plus petites et les plus quotidiennes. »
+    </p>
+  </footer>
+
+  <noscript>
+    <div class="noscript">
+      Ce site a besoin de JavaScript pour fonctionner. Les humains l'ont encore fait.
+    </div>
+  </noscript>
+
+  <script src="script.js"></script>
+</body>
+</html>
