@@ -698,18 +698,8 @@ document.addEventListener("DOMContentLoaded", () => {
   wireConsentCheckboxes();
   wireButtons();
   restoreFlow();
-  
-document.addEventListener("DOMContentLoaded", () => {
-  loadState();
-  wireConsentCheckboxes();
-  wireButtons();
-  restoreFlow();
-  history.replaceState({ screen: state.screen }, "", "#" + state.screen); // ← nouvelle ligne
+  history.replaceState({ screen: state.screen }, "", "#" + state.screen);
 
-  if (state.screen === "test") {
-    renderBoard();
-  }
-  ...
   if (state.screen === "test") {
     renderBoard();
   }
@@ -721,4 +711,3 @@ document.addEventListener("DOMContentLoaded", () => {
     renderChapter();
   }
 });
-
