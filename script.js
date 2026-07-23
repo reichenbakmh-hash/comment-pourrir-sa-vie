@@ -639,27 +639,62 @@ function restoreFlow() {
 
   if (!state.ageApproved) {
     showScreen("age");
-    
-document.addEventListener("DOMContentLoaded", () => {
-  const btnAdult = document.getElementById("btnAdult");
-  const btnMinor = document.getElementById("btnMinor");
-  const btnBackFromMinor = document.getElementById("btnBackFromMinor");
-  const btnAcceptConsent = document.getElementById("btnAcceptConsent");
-  const btnContinueFromResult = document.getElementById("btnContinueFromResult");
-  const btnStartChapters = document.getElementById("btnStartChapters");
-  const btnNextChapter = document.getElementById("btnNextChapter");
-  const btnToDiscord = document.getElementById("btnToDiscord");
-  const btnRestart = document.getElementById("btnRestart");
-  const btnBackHome = document.getElementById("btnBackHome");
+    return;
+  }
 
-  btnAdult?.addEventListener("click", () => confirmAge(true));
-  btnMinor?.addEventListener("click", () => confirmAge(false));
-  btnBackFromMinor?.addEventListener("click", () => showScreen("age"));
-  btnAcceptConsent?.addEventListener("click", acceptConsent);
-  btnContinueFromResult?.addEventListener("click", continueFromResult);
-  btnStartChapters?.addEventListener("click", startChapters);
-  btnNextChapter?.addEventListener("click", nextChapter);
-  btnToDiscord?.addEventListener("click", goDiscord);
-  btnRestart?.addEventListener("click", resetExperience);
-  btnBackHome?.addEventListener("click", resetExperience);
+  if (!state.consentApproved) {
+    showScreen("consent");
+    return;
+  }
+
+  if (state.screen === "test") {
+    showScreen("test");
+    return;
+  }
+
+  if (state.screen === "result") {
+    showScreen("result");
+    return;
+  }
+
+  if (state.screen === "intro") {
+    showScreen("intro");
+    return;
+  }
+
+  if (state.screen === "chapter") {
+    showScreen("chapter");
+    return;
+  }
+
+  if (state.screen === "final") {
+    showScreen("final");
+    return;
+  }
+
+  if (state.screen === "discord") {
+    showScreen("discord");
+    return;
+  }
+
+  showScreen("age");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadState();
+  wireConsentCheckboxes();
+  wireButtons();
+  restoreFlow();
+
+  if (state.screen === "test") {
+    renderBoard();
+  }
+
+  updateProgress();
+  setNarration(state.screen);
+
+  if (state.screen === "chapter") {
+    renderChapter();
+  }
 });
+
