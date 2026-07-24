@@ -8,12 +8,10 @@ const CHAPTERS = [
     title: "L'art de remettre à demain",
     quote: "Le futur est le plus grand entrepôt de bonnes intentions jamais construit.",
     body: [
-      "La procrastination est probablement le piège le plus élégant jamais inventé.",
-      "Parce que sans aucun doute elle ne dit jamais : « J'abandonne. »",
-      "Elle dit : « Pas maintenant. »",
-      "Et c'est précisément ce qui la rend dangereuse.",
-      "Demain est un endroit magique. On y trouve toujours la motivation parfaite, l'énergie parfaite et le courage parfait.",
-      "Malheureusement, demain arrive toujours déguisé en aujourd'hui. Et la configuration se répète."
+      "La procrastination est sans doute le piège le plus élégant qu'on ait inventé, parce qu'elle ne dit jamais « j'abandonne » — elle dit juste « pas maintenant »,",
+      "ce qui est beaucoup plus difficile à détester. Demain, dans ta tête, c'est un pays merveilleux où tu te réveilles motivé, reposé et soudain capable de tout gérer avant midi.",
+      "Le problème c'est que demain, une fois arrivé, s'appelle toujours « aujourd'hui », et il n'a jamais reçu le mémo sur la motivation parfaite. Donc tu repousses encore, et le pays merveilleux recule d'une journée, indéfiniment,",
+      "comme un horizon qui te nargue avec le doigt d'honneur spécialement pour toi." 
     ],
     callout: "Et tu veux que je te dise tu ne repousses pas seulement une tâche. Tu repousses une version de toi. Voilà, une élégante façon de saboter ton existence"
   },
@@ -32,11 +30,9 @@ const CHAPTERS = [
     title: "Le téléphone",
     quote: "Ton téléphone est juste une banane brillante que tu tends à chaque notification.",
     body: [
-      "Le téléphone contient la connaissance du monde, des œuvres d'art, des bibliothèques et des outils incroyables.",
-      "Et pourtant, une immense partie de l'humanité l'utilise principalement pour regarder des inconnus danser dans leur cuisine.",
-      "C'est presque poétique.",
-      "Votre attention est une ressource limitée.",
-      "Chaque minute offerte sans réflexion est une minute utilisée par quelqu'un d'autre à votre place."
+      "Le téléphone contient à peu près toute la connaissance humaine, des musées entiers, des bibliothèques, des outils qui auraient fait pleurer un moine du Moyen Âge. Et l'usage principal qu'on en fait collectivement,",
+      "c'est de regarder des inconnus danser dans leur cuisine à 23h. C'est presque touchant, dans le genre pathétique.",
+      "Ton attention, c'est la seule ressource que tu ne peux jamais racheter après coup. Chaque scroll gratuit que tu offres au hasard, c'est une minute que quelqu'un d'autre — un algorithme, une entreprise, un inconnu qui danse — a dépensée à ta place, sans même te demander ton avis."
     ],
     callout: "Tu crois contrôler l’écran, mais en vrai tu danses pour lui comme un singe bien dressé. Et je vois là une manière de pourrir ta vie."
   },
@@ -44,10 +40,8 @@ const CHAPTERS = [
     title: "Les fausses urgences",
     quote: "Beaucoup de personnes courent toute leur vie sans vérifier la direction.",
     body: [
-      "Répondre immédiatement à tout donne parfois l'impression d'être important.",
-      "Mais être occupé et avancer sont deux activités différentes.",
-      "L'urgence aime se déguiser en nécessité.",
-      "Le bruit sait se faire passer pour l'essentiel."
+      "Répondre à tout instantanément donne une impression grisante d'importance — comme si le monde s'effondrait sans ta réponse dans les 90 secondes.",
+      "Sauf que non : être occupé et avancer, ce sont deux sports complètement différents, et le premier est nettement plus fatigant pour un résultat nettement plus nul. L'urgence adore se déguiser en nécessité, et le bruit ambiant en essentiel — les deux portent le même costume, et c'est fait exprès"
     ],
     callout: "Courir vite n'aide pas si tu cours vers la mauvaise porte. Mais si tu comptes à ce point pourrir ta vie, il faudrait commencer par fermer les yeux et courrir vite vers la porte."
   },
@@ -55,10 +49,8 @@ const CHAPTERS = [
     title: "Le confort",
     quote: "Le confort est merveilleux. Jusqu'au moment où il devient ton geôlier.",
     body: [
-      "Tout ce qui est agréable aujourd'hui peut devenir une prison demain.",
-      "Le lit, le canapé, les habitudes, les excuses familières.",
-      "Le confort est un excellent serviteur.",
-      "Un très mauvais roi."
+      "Tout ce qui est agréable aujourd'hui peut très bien devenir ta prison demain : le lit un peu trop confortable, le canapé qui te réclame par ton nom, les habitudes douillettes et leurs excuses toujours prêtes à l'emploi. Le confort, c'est exactement comme le feu dans la cheminée :",
+      "un excellent serviteur tant que tu le contrôles, et un très mauvais roi le jour où c'est lui qui décide de ta soirée à ta place."
     ],
     callout: "Se reposer n'est pas fuir. Se cacher derrière le repos, oui. C'est une belle manière de pourrir ta vie."
   },
@@ -67,21 +59,17 @@ const CHAPTERS = [
     quote: "Comparer ta vie avec la règle de quelqu’un d’autre produit des mesures très bizarres. Plus tu crois fixer la vitesse de ta particule, moins tu sais où elle se trouve..",
     body: [
       "On adore se comparer.",
-      "C'est étrange, parce que chacun joue une partie différente sur un plateau différent avec des cartes différentes.",
-      "Pourtant : « Elle est plus belle. », « Elle est plus avancée. », « Il réussit mieux. »",
-      "Et ainsi commence la compétition la plus absurde du monde."
+      "Alors que c'est complètement absurde : chacun joue une partie différente, sur un plateau différent, avec des cartes qu'il n'a même pas choisies. Et pourtant on se surprend à penser « elle est plus belle », « elle est plus avancée », « il réussit mieux » — et voilà repartie la compétition la plus stupide de l'histoire de l'humanité, celle qu'on ne peut jamais gagner puisque personne ne joue aux mêmes règles",
     ],
-    callout: "Le gouvernail de ta vie ne devrait pas être confié à la vie des autres. Si ton plaisir est vraiment de saboter ton existence par le biais des compétitions, organise donc une compétition d'une bataille d’oreillers mais remplis de briques"
+    callout: "Le gouvernail de ta vie ne devrait pas être confié à la vie des autres. Si ton plaisir est vraiment de saboter ton existence par le biais des compétitions, organise donc une compétition d'une bataille d’oreillers mais avec des briques"
   },
   {
     title: "Les habitudes",
     quote: "Une habitude n'a pas besoin d'être spectaculaire pour ruiner une vie.",
     body: [
-      "Elle a seulement besoin d'être répétée.",
-      "Une goutte d'eau paraît inoffensive.",
-      "Des millions de gouttes peuvent creuser la pierre.",
-      "Les habitudes fonctionnent exactement de la même manière.",
-      "La plupart des destins sont simplement des habitudes devenues invisibles."
+      "Elle a simplement besoin d'être répétée."
+      "Une habitude n'a même pas besoin d'être spectaculaire pour tout changer : une goutte d'eau, prise isolément, ne fait de mal à personne, mais des millions de gouttes, au même endroit, finissent par creuser la pierre — et ta vie n'est pas beaucoup plus solide que de la pierre calcaire.",
+      "La plupart des destins, ce ne sont pas de grandes décisions : ce sont juste des habitudes qu'on a arrêté de remarquer depuis longtemps"
     ],
     callout: "Ce n'est presque jamais un grand drame. Pour pourrir ta vie c'est souvent une petite répétition."
   },
@@ -89,24 +77,19 @@ const CHAPTERS = [
     title: "Le bruit",
     quote: "Le silence fait peur à beaucoup de monde parce qu'il pose des questions.",
     body: [
-      "Qui suis-je ?",
-      "Qu'est-ce que je veux ?",
-      "Pourquoi fais-je cela ?",
-      "Le bruit constant évite d'avoir à répondre.",
-      "Notifications, vidéos, musiques, distractions, toujours quelque chose.",
-      "Jusqu'au moment où l'on ne sait plus très bien ce que l'on pense réellement.",
-      "Tu construis ta cage avec tes propres divertissements, et tu l’appelles liberté. Sérieusement bravo, tu es sur la bonne voie pour pourrir ta vie."
+      "Qui suis-je ? Qu'est-ce que je veux, vraiment ? Pourquoi je fais tout ça ?"
+      "Trois questions toutes simples, et pourtant on organise des journées entières pour ne jamais avoir à y répondre.",
+      "Notification, vidéo, musique, groupe de discussion — un truc chasse l'autre, jusqu'au jour où tu ne sais plus vraiment ce que tu penses, faute d'avoir eu deux minutes de silence pour vérifier.",
+      "Tu construis ta propre cage à coups de divertissements gratuits, et tu appelles ça de la liberté. Ce pauvre Blaise Pascal, tu l'insultes gratuitement. Mais sérieusement, bravo, tu es en excellente voie pour pourrir ta vie."
     ],
-    callout: "Le silence ne ment pas souvent il expose."
+    callout: "Le silence ne ment pas souvent il expose. N'essaie pas de t'ennuyer si tu comptes à ce point pourrir ta vie."
   },
   {
     title: "La fatigue",
     quote: "Parfois tu n'es pas paresseux. Tu es simplement épuisé.",
     body: [
-      "Et parfois tu n'es pas épuisé. Tu es simplement désorganisé.",
-      "La difficulté consiste à distinguer les deux.",
-      "On confond souvent repos, fuite, récupération et abandon.",
-      "Cela crée des situations très créatives. Et souvent très coûteuses."
+      "Parfois tu n'es pas paresseux, juste épuisé — et parfois tu n'es même pas épuisé, juste complètement désorganisé, ce qui ressemble énormément à de la fatigue vue de l'extérieur (et même de l'intérieur, si on est honnête).",
+      "La vraie difficulté, c'est de faire la différence entre repos, fuite, récupération et abandon pur et simple, parce qu'on confond allègrement les quatre, et ça donne des situations très créatives et souvent très coûteuses — genre démissionner un lundi matin parce qu'on a mal dormi trois nuits d'affilée ou dormir durant un évènement."
     ],
     callout: "Le repos nettoie, la fuite salit. Et c’est une façon de pourrir ta vie."
   },
@@ -114,16 +97,16 @@ const CHAPTERS = [
     title: "La forme",
     quote: "L'art ne nie pas la vie. Il lui donne une forme habitable.",
     body: [
-      "Pour Nietzsche, l'art n'est pas seulement décoratif.",
+      "Pour Nietzsche, l'art n'est pas seulement décoratif. et qu'il invite à être artiste de notre vie. Les choses ne sont jamais belles d'elles-mêmes mais dans la manière dont nous regardons les choses.",
       "Il rend la vie supportable, visible, vivable.",
       "Imagine qu'on te donne un bloc d'argile.",
       "Tu peux le laisser tel quel. Tu peux le casser. Ou tu peux lui donner une forme.",
       "La vie fonctionne un peu de la même manière.",
       "Tu ne choisis pas toujours la matière. Mais tu participes à la forme.",
-      "Les erreurs, les peurs, les maladresses, les échecs : tout cela fait partie du matériau.",
+      "tout ce qui t'arrive dans la vie tout cela fait partie du matériau.",
       "L'artiste ne supprime pas les imperfections. Il travaille avec elles."
     ],
-    callout: "Le contraire de l'auto-sabotage, ce n'est pas la perfection, c'est assurément la forme consciente."
+    callout: "C'est assurément ne pas atteindre ta forme consciente la manière la plus efficace de pourrir ta vie."
   }
 ];
 
