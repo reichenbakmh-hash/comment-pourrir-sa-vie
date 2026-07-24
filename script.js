@@ -154,7 +154,7 @@ const NARRATION = {
   discord: [
     "Sortie de secours sociale.",
     "Le bureau des réclamations est ouvert.",
-    "Si tu veux parler, parle ici. Le gouffre mental, lui, ne répond jamais.""
+    "Si tu veux parler, parle ici. Le gouffre mental, lui, ne répond jamais."
   ]
 };
 
