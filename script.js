@@ -67,7 +67,7 @@ const CHAPTERS = [
     title: "Les habitudes",
     quote: "Une habitude n'a pas besoin d'être spectaculaire pour ruiner une vie.",
     body: [
-      "Elle a simplement besoin d'être répétée."
+      "Elle a simplement besoin d'être répétée.",
       "Une habitude n'a même pas besoin d'être spectaculaire pour tout changer : une goutte d'eau, prise isolément, ne fait de mal à personne, mais des millions de gouttes, au même endroit, finissent par creuser la pierre — et ta vie n'est pas beaucoup plus solide que de la pierre calcaire.",
       "La plupart des destins, ce ne sont pas de grandes décisions : ce sont juste des habitudes qu'on a arrêté de remarquer depuis longtemps"
     ],
@@ -77,7 +77,7 @@ const CHAPTERS = [
     title: "Le bruit",
     quote: "Le silence fait peur à beaucoup de monde parce qu'il pose des questions.",
     body: [
-      "Qui suis-je ? Qu'est-ce que je veux, vraiment ? Pourquoi je fais tout ça ?"
+      "Qui suis-je ? Qu'est-ce que je veux, vraiment ? Pourquoi je fais tout ça ?",
       "Trois questions toutes simples, et pourtant on organise des journées entières pour ne jamais avoir à y répondre.",
       "Notification, vidéo, musique, groupe de discussion — un truc chasse l'autre, jusqu'au jour où tu ne sais plus vraiment ce que tu penses, faute d'avoir eu deux minutes de silence pour vérifier.",
       "Tu construis ta propre cage à coups de divertissements gratuits, et tu appelles ça de la liberté. Ce pauvre Blaise Pascal, tu l'insultes gratuitement. Mais sérieusement, bravo, tu es en excellente voie pour pourrir ta vie."
