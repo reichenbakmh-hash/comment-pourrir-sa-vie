@@ -114,11 +114,11 @@ const NARRATION = {
   age: [
     "Étonnant, tu arrives à lire.",
     "Je vois que tu es le genre à lire d'abord, réfléchir ensuite.",
-    "Entrée contrôlée. Oui je sais, ça sent déjà la tragédie élégante."
+    "Tu franchis même les portails d'entrée comme si c'était un détail. Ça promet pour la suite."
   ],
   minor: [
-    "Le chaos peut attendre.",
-    "Retour vers des choses plus douces. Et oui, ça existe.",
+    "Le grand spectacle attendra que tu sois prêt à t'y perdre",
+    "On te ramène ici, loin du grand spectacle, pour l'instant, en tout cas.",
     "On évite encore le théâtre principal svp."
   ],
   consent: [
@@ -127,9 +127,9 @@ const NARRATION = {
     "Et tout commence par un oui très bizarre."
   ],
   test: [
-    "Le Gardien joue parfaitement. Comme certains pièges.",
-    "Le morpion n'est jamais vraiment un jeu. C'est un verdict.",
-    "On aime entrer dans une pièce en pensant qu'on va la dominer."
+    "Le Gardien aime te laisser croire que tu as une chance.",
+    "Tout est déjà préétabli. Tout ce qui te reste c'est l'esthétique et la manière d'en finir.",
+    "Choisis l'esthétique de ta défaite."
   ],
   result: [
     "Tu as passé l'épreuve. Ou tu as survécu à sa logique.",
@@ -154,7 +154,7 @@ const NARRATION = {
   discord: [
     "Sortie de secours sociale.",
     "Le bureau des réclamations est ouvert.",
-    "Si tu veux parler, c'est ici. Pas dans un gouffre mental."
+    "Si tu veux parler, parle ici. Le gouffre mental, lui, ne répond jamais.""
   ]
 };
 
