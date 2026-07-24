@@ -398,7 +398,7 @@ function handleHumanMove(index) {
   saveState();
 
   updateGameStatus("Le Gardien joue...");
-  updateGameExplain("Le Gardien voit plus loin que les humains. Triste, mais pratique.");
+  updateGameExplain("Le Gardien voit plus loin que les êtres humains. Triste, mais pratique.");
 
   setTimeout(() => {
     const move = getBestMove(state.game.board);
@@ -613,9 +613,9 @@ function wireButtons() {
   $("btnRestart").addEventListener("click", resetExperience);
   $("btnBackHome").addEventListener("click", resetExperience);
   $("discordLink").addEventListener("click", (e) => {
-    if (DISCORD_URL === "YOUR_DISCORD_LINK_HERE") {
+    if (DISCORD_URL === "https://discord.gg/Ag7CQVdCR") {
       e.preventDefault();
-      alert("Remplace YOUR_DISCORD_LINK_HERE dans script.js avec ton vrai lien Discord.");
+      alert("https://discord.gg/Ag7CQVdCR");
     }
   });
 }
