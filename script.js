@@ -613,9 +613,9 @@ function wireButtons() {
   $("btnRestart").addEventListener("click", resetExperience);
   $("btnBackHome").addEventListener("click", resetExperience);
   $("discordLink").addEventListener("click", (e) => {
-    if (DISCORD_URL === "https://discord.gg/Ag7CQVdCR") {
+    if (DISCORD_URL === "YOUR_DISCORD_LINK_HERE") {
       e.preventDefault();
-      alert("https://discord.gg/Ag7CQVdCR");
+      alert("Remplace YOUR_DISCORD_LINK_HERE dans script.js avec ton vrai lien Discord.");
     }
   });
 }
