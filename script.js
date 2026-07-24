@@ -112,7 +112,7 @@ const CHAPTERS = [
 
 const NARRATION = {
   age: [
-    "Tu es arrivé. Étonnant.",
+    "Étonnant, tu arrives à lire.",
     "Je vois que tu es le genre à lire d'abord, réfléchir ensuite.",
     "Entrée contrôlée. Oui je sais, ça sent déjà la tragédie élégante."
   ],
@@ -123,13 +123,13 @@ const NARRATION = {
   ],
   consent: [
     "Le formulaire...",
-    "Tu vois ? La civilisation tient avec des cases à cocher. J'espère que tu as d'abord suivi le manuel pour cocher ded cases.",
+    "Tu vois ? La civilisation tient avec des cases à cocher. J'espère que tu as d'abord appris le manuel pour cocher des cases.",
     "Et tout commence par un oui très bizarre."
   ],
   test: [
     "Le Gardien joue parfaitement. Comme certains pièges.",
     "Le morpion n'est jamais vraiment un jeu. C'est un verdict.",
-    "Les êtres humains aiment entrer dans une pièce en pensant qu'ils vont la dominer."
+    "On aime entrer dans une pièce en pensant qu'on va la dominer."
   ],
   result: [
     "Tu as passé l'épreuve. Ou tu as survécu à sa logique.",
@@ -509,13 +509,13 @@ function finishGame(result) {
   } else if (draw) {
     $("resultKicker").textContent = "MATCH NUL";
     $("resultTitle").textContent = "Félicitations.";
-    $("resultLead").textContent = "Tu as obtenu le résultat le plus fréquent. Comme la plupart des humains.";
+    $("resultLead").textContent = "Tu as obtenu le résultat le plus fréquent.";
     $("resultText").innerHTML = `
-      <p>Le chaos n'a pas gagné franchement.</p>
+      <p>Franchement, je ne suis meme pas déçu.</p>
       <p>Tu n'as pas non plus dominé la machine. Tu as oublié de télécharger ton cerveau ?</p>
-      <p>Tu as atteint cette zone élégante où rien ne se résout complètement, mais où tout reste digne.</p>
-      <p>C'est très humain.</p>
-      <p>Et parfaitement suffisant pour continuer.</p>
+      <p>Tu es en zone neutre, j'imagine que c'est la même chose avec ta vie.</p>
+      <p>C'est très humain et tu le pourris déjà assez.</p>
+      <p>Et c'est parfaitement suffisant pour continuer.</p>
     `;
   } else {
     $("resultKicker").textContent = "DÉFAITE";
